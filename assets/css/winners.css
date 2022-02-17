@@ -1,0 +1,449 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.content__title {
+  margin-bottom: 20px;
+}
+.reg-code-btn {
+  font-size: 18px;
+}
+.content__search-winner {
+  width: 100%;
+  max-width: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px auto 30px;
+}
+@media screen and (max-width: 768px) {
+  .content__search-winner {
+    width: 280px;
+    flex-direction: column;
+    margin: 30px auto 70px;
+  }
+}
+.content__select-date {
+  width: 210px;
+}
+@media screen and (max-width: 768px) {
+  .content__select-date {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+}
+.content__select-date .select-search {
+  width: 210px;
+}
+@media screen and (max-width: 768px) {
+  .content__select-date .select-search {
+    width: 280px;
+  }
+}
+.content__input-search-wrapper {
+  position: relative;
+  border-radius: 60px;
+}
+@media screen and (max-width: 768px) {
+  .content__input-search-wrapper {
+    margin-bottom: 20px;
+  }
+}
+.content__btn-search-by-phone {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 60px;
+  background: linear-gradient(93.5deg, #ED1C24 9.96%, #E4580F 94.28%);
+}
+.content__btn-search-by-phone:hover {
+  background: linear-gradient(90deg, #E6000E 4.2%, #E6000E 103.78%);
+}
+.content__btn-search-by-phone svg {
+  width: 17px;
+  height: 17px;
+  margin-top: 5px;
+  fill: #fff;
+}
+.content__search-by-phone {
+  width: 260px;
+  height: 46px;
+  padding: 0 12px 0 58px;
+  border-radius: 60px;
+  border: 2px solid transparent;
+  color: #060F15;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .content__search-by-phone {
+    width: 280px;
+  }
+}
+.content__winners {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .content__winners {
+    padding: 0 5px 0 25px;
+  }
+}
+.content .winners__group {
+  width: calc(100% - 210px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__group {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+  }
+}
+.content .winners__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__labels {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.content .winners__label {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 14px;
+}
+.content .winners__label-name {
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__label-name {
+    display: none;
+  }
+}
+.content .winners__label-date {
+  width: 65px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__label-date {
+    display: none;
+  }
+}
+.content .winners__label-phone {
+  width: 110px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__label-phone {
+    margin: 0;
+    display: none;
+  }
+}
+.content .winners__label-prize {
+  width: 210px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__label-prize {
+    width: 176px;
+  }
+}
+.content .winners__label-winner {
+  width: 150px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__label-winner {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content .winners__label-winner {
+    width: 80px;
+  }
+}
+.content .winners__list {
+  height: 327px;
+  padding-right: 30px;
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  .content .winners__list {
+    height: 400px;
+  }
+}
+.content .winners .winner-item {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .content .winners .winner-item {
+    justify-content: center;
+  }
+}
+.content .winners .winner-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners .winner-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.content .winners .winner-item__name {
+  width: 150px;
+  padding-right: 5px;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners .winner-item__name {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content .winners .winner-item__name {
+    width: 80px;
+  }
+}
+.content .winners .winner-item__date {
+  width: 65px;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners .winner-item__date {
+    font-size: 11px;
+    color: #fff;
+    opacity: 0.5;
+    order: 1;
+  }
+}
+.content .winners .winner-item__phone {
+  flex-shrink: 0;
+  width: 110px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners .winner-item__phone {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content .winners .winner-item__phone {
+    width: 80px;
+  }
+}
+.content .winners .winner-item__prize {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .content .winners .winner-item__prize {
+    width: 176px;
+    font-size: 14px;
+  }
+}
+.content .winners .winner-item__prize img {
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+.content__title2 {
+  margin-bottom: 15px;
+}
+.content__text {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 410px;
+  font-size: 21px;
+  text-align: center;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .content__text {
+    width: 300px;
+    margin-bottom: 300px;
+  }
+  .content__text br {
+    display: none;
+  }
+}
+.winner-main-prize-wrapper {
+  position: relative;
+}
+.winner-main-prize {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 460px;
+  margin: auto;
+  background: url(../img/winner-main-prize.png) center no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+.scrollbar-inner > .scroll-element .scroll-element_track {
+  background: #165186;
+  width: 1px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background: #165186;
+}
+
+.winners-announce {
+  position: relative;
+  padding-top: 40px;
+  margin: 110px auto;
+  max-width: 530px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.winners-announce::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 56px;
+  height: 17px;
+  background: url(../img/bat-popup.svg) center no-repeat;
+  background-size: contain;
+}
+
+.date-filter {
+  position: relative;
+  max-width: 210px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .date-filter {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+}
+
+.datepicker-here {
+  width: 100%;
+  height: 46px;
+  padding-left: 46px;
+  padding-right: 45px;
+  font-family: "TT Limes Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  color: #060F15;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition: all .2s linear;
+}
+
+.date-filter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  bottom: 0;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  background: url(../img/calendar.svg) center no-repeat;
+  background-size: contain;
+}
+
+.date-filter::after {
+  content: '';
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 20px;
+  background-image: url(../img/arrow-red.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.datepicker {
+  width: 200px;
+  border: 1px solid #CD0319;
+  font-family: "TT Limes Sans", sans-serif;
+}
+
+.datepicker--pointer {
+  border-top: 1px solid #CD0319;
+  border-right: 1px solid #CD0319;
+}
+
+.datepicker--nav-title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  color: #CD0319;
+}
+
+.datepicker--nav-title i {
+  color: #CD0319;
+}
+
+.datepicker--day-name {
+  color: #CD0319;
+}
+
+.datepicker--cell.-current- {
+  color: #CD0319;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-focus- {
+  color: #fff;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current- {
+  background: transparent;
+}
+
+.datepicker--cell.-selected-.-focus- {
+  background: #FCE7A7;
+}
+
+.datepicker--cell.-selected-::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: #CD0319;
+  border-radius: 50px;
+  z-index: -1;
+}
