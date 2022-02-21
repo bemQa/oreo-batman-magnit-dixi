@@ -3,6 +3,11 @@
   flex-direction: column;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 768px) {
+  .content {
+    padding-bottom: 60px
+  }
+}
 .content__title {
   margin-bottom: 20px;
 }
@@ -58,7 +63,6 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    margin-bottom: 30px;
   }
 }
 .content__user-team {
@@ -154,7 +158,24 @@
   margin: 0 10px;
   color: #fff;
 }
+.content .user-about__mail {
+  display: block;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 370px) {
+  .content .user-about__mail, .content .user-about__phone {
+    margin: 0 4px;
+    font-size: 14px;
+  }
+  .content .user-about__mail {
+    max-width: 158px;
+  }
+}
 .content .user-about__mail svg, .content .user-about__phone svg {
+  min-width: 16px;
   margin-right: 5px;
 }
 .content .user-about__btn-log-out {
@@ -222,7 +243,7 @@
 }
 @media screen and (max-width: 480px) {
   .content .user-codes__labels {
-    padding-right: 10px;
+    padding-right: 15px;
   }
 }
 .content .user-codes__label {
@@ -231,9 +252,12 @@
 }
 .content .user-codes__label-check {
   width: 70px;
-}
-.content .user-codes__label-check:nth-child(1) {
   margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  .content .user-codes__label-check {
+    width: 50px;
+  }
 }
 .content .user-codes__label-date {
   width: 65px;
@@ -275,6 +299,11 @@
   padding-right: 30px;
   overflow: auto;
 }
+@media screen and (max-width: 768px) {
+  .content .user-codes__list {
+    padding-right: 15px;
+  }
+}
 .content .user-codes__group {
   display: flex;
   justify-content: space-between;
@@ -298,6 +327,11 @@
 .content .user-codes .code-item__check {
   min-width: 70px;
   margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .content .user-codes .code-item__check {
+    min-width: 55px;
+  }
 }
 .check-wrapper {
   position: relative;
@@ -341,9 +375,9 @@
 }
 @media screen and (max-width: 480px) {
   .content .user-codes .code-item__code {
-    min-width: 60px;
+    min-width: 80px;
     margin-right: 0;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .content .user-codes .code-item__date {
@@ -360,7 +394,11 @@
 }
 @media screen and (max-width: 480px) {
   .content .user-codes .code-item__date {
-    font-size: 12px;
+    font-size: 11px;
+    color: #165186;
+  }
+  .content .user-codes .reject .code-item__date {
+    color: #989898;
   }
 }
 .content .user-codes .code-item__status {
@@ -377,7 +415,8 @@
 }
 @media screen and (max-width: 480px) {
   .content .user-codes .code-item__text {
-    font-size: 16px;
+    font-size: 18px;
+    margin-left: 0;
   }
 }
 .content .user-codes .code-item__text_fail {
