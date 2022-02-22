@@ -390,14 +390,21 @@
 }
 
 .datepicker {
-  width: 200px;
+  width: 210px;
+  border-radius: 20px;
   border: 1px solid #CD0319;
   font-family: "TT Limes Sans", sans-serif;
 }
 
 .datepicker--pointer {
+  display: none;
   border-top: 1px solid #CD0319;
   border-right: 1px solid #CD0319;
+}
+
+.datepicker--nav {
+  border-bottom: 1px solid #020204;
+  padding: 0 4px;
 }
 
 .datepicker--nav-title {
@@ -411,8 +418,19 @@
   color: #CD0319;
 }
 
+.datepicker--days-names {
+  margin: 0;
+}
+
 .datepicker--day-name {
-  color: #CD0319;
+  color: #020204;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.datepicker--cell-day {
+  font-size: 12px;
+  height: 22px;
 }
 
 .datepicker--cell.-current- {

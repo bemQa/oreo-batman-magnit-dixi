@@ -1,0 +1,403 @@
+@font-face {
+    font-family: "TT Limes Sans";
+    src: url("../fonts/TTLimesSans-Regular.eot");
+    src: url("../fonts/TTLimesSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLimesSans-Regular.woff2") format("woff2"), url("../fonts/TTLimesSans-Regular.woff") format("woff"), url("../fonts/TTLimesSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Limes Sans";
+    src: url("../fonts/TTLimesSans-Bold.eot");
+    src: url("../fonts/TTLimesSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLimesSans-Bold.woff2") format("woff2"), url("../fonts/TTLimesSans-Bold.woff") format("woff"), url("../fonts/TTLimesSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pluto Sans Cond";
+    src: url("../fonts/PlutoSansCondRegular.eot");
+    src: url("../fonts/PlutoSansCondRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlutoSansCondRegular.woff") format("woff"), url("../fonts/PlutoSansCondRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'TT Limes Sans';
+    font-weight: normal;
+    font-style: normal;
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #fff;
+}
+
+.container.uf-container.container--custom {
+    color: #fff;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+.container.uf-container.container--custom::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-tutorial__text {
+    font-family: 'TT Limes Sans';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.container-tutorial__text p {
+    margin-bottom: 20px;
+}
+
+.dropzone.dropzone--custom.dz-clickable {
+    background-color: transparent;
+    border: 2px solid rgba(39, 98, 158, .3);
+    text-align: center;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    margin: 16px auto;
+    border-radius: 0;
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    .dropzone .dz-preview.dz-image-preview {
+        width: 200px;
+    }
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 0 !important;
+    font-weight: bold;
+    background-color: #E6000E;
+    border-color: #E6000E;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 30px;
+    z-index: 21;
+    color: #fff;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-remove::before {
+    content: 'X';
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    background: #E6000E;
+    text-decoration: none;
+}
+
+.uf-button-wrapper.button-wrapper--custom {
+    text-align: center
+}
+
+.uf-button-submit.button-submit--custom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    padding: 17px 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: linear-gradient(93.5deg, #ED1C24 9.96%, #E4580F 94.28%);
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 33px;
+}
+
+.uf-button-submit.button-submit--custom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 140px;
+    background: #E6000E;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+.uf-button-submit.button-submit--custom:hover::after,
+.uf-button-submit.button-submit--custom:focus::after {
+    opacity: 1;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
+    margin: 20px 0;
+}
+
+.dropzone.dz-started .dz-message span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 154px;
+    width: max-content;
+    height: 34px;
+    margin: auto;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: transparent;
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 33px;
+}
+
+.dropzone.dz-started .dz-message span:hover {
+    background: #fff;
+    color: #020204;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
+    text-decoration: none;
+}
+
+.uf-controls-wrapper {
+    margin-top: 20px;
+}
+
+.uf-controls-wrapper .form-control {
+    max-width: 280px;
+    width: 100%;
+    height: 48px;
+    padding-left: 15px !important;
+    font-family: 'TT Limes Sans';
+    font-size: 16px;
+    line-height: 1;
+    color: #020204;
+    background: #fff;
+    border: 1px solid #D3BD9B;
+    border-radius: 30px;
+    transition: all .2s linear;
+    margin: 10px auto;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
+}
+
+.uf-controls-wrapper .form-control:focus {
+    border: 1px solid #020204;
+}
+
+.input-group.date {
+    /*overflow: hidden;*/
+    margin: 10px auto;
+    width: 100%;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.input-group.date input {
+    margin: 0;
+    min-width: 240px;
+}
+
+.input-group.date .input-group-addon {
+    border-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #D3BD9B;
+    border-left: none;
+}
+
+.bootstrap-datetimepicker-widget {
+    z-index: 9999;
+    background: #fefefe;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17em;
+}
+
+.angular-uf-container.angular-uf-message p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+zxing-scanner {
+    border-color: rgba(39, 98, 158, .3) !important;
+    border: 2px solid;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 20px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+app-root button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    padding: 17px 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: linear-gradient(93.5deg, #ED1C24 9.96%, #E4580F 94.28%);
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 33px;
+}
+
+app-root button:hover {
+    
+}
+
+dropzone {
+    max-width: 240px;
+    min-height: 156px;
+    background: transparent;
+    border: 2px solid rgba(39, 98, 158, .3);
+    border-radius: 10px;
+    margin: 0 auto 25px;
+}
+
+app-root dropzone>.dropzone.dz-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    padding: 10px;
+}
+
+app-root dropzone>.dropzone.dz-wrapper .dz-message {
+    border: none;
+    background: none;
+    margin: 3rem 0;
+}
+
+app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
+    order: 1;
+    margin: 20px 0;
+}
+
+.angular-uf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+app-root select {
+    width: 200px;
+    height: 32px;
+    margin: 0 auto 20px;
+    padding: 0 20px 0 10px;
+    border: 1px solid transparent;
+    background: #fff;
+    border-radius: 20px;
+}
+
+app-root .dropzone .dz-preview.dz-image-preview {
+    width: 200px;
+    height: 200px;
+}
+
+app-root .dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+}
+
+.angular-uf-no-device-message,
+.angular-uf-device-check-err-message,
+.angular-uf-restrict-message {
+    text-align: center;
+}

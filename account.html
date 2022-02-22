@@ -108,7 +108,8 @@
                     <p class="code-item__code">Принят</p>
                   </div>
                   <div class="code-item__text">
-                    120 бонусов <br>на карту Магнит
+                    120 бонусов <br>на карту Магнит <br>
+                    <a href="#!" class="link pop-op" data-popup="popup-register-card">Как получить?</a>
                   </div>
                 </li>
                 <li class="user-codes__item code-item">
@@ -322,7 +323,7 @@
       </button>
       <p class="popup__title">Загрузка чека</p>
       <div class="iframe-wrap">
-          <iframe src="https://checkservice.emg.ru/angular?id=ff632304-a749-471e-808f-01bbb4c06bbb&participantId=1&hash=00a0fb9c2713d7be88cc47c890ada64d" class="iframe" frameborder="0"></iframe>
+          <iframe src="https://checkservice.emg.ru/Upload?id=5f9c0b30-2382-49eb-8256-583514e286e6&participantId=1&hash=5fca11c91c36614f0242610c63cda0be&param[shop]=14" class="iframe" frameborder="0"></iframe>
       </div>
     </div>
   </div>
@@ -379,6 +380,26 @@
         Этот чек уже был загружен ранее. Один чек можно загружать только один раз.
       </p>
       <button class="popup__btn-send btn js-close-popup">Понятно</button>
+    </div>
+  </div>
+
+  <!-- Popup card accepted -->
+  <div id="popup-check-accepted" class="popup popup-text">
+    <div class="popup__wrap">
+      <button class="popup__close close-popup js-close-popup" aria-label="Close Popup">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 2L2 18" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M2 2L18 18" stroke-width="4" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <img src="./assets/img/prizes/magnit-icon.svg" class="popup__title-img" alt="">
+      <!-- <img src="./assets/img/prizes/dixi-icon.png" class="popup__title-img" alt=""> -->
+      <p class="popup__title">Ваш чек принят!</p>
+      <p class="popup__text">
+        Присоединяйтесь к большой гонке! В случае успешной проверки чека, результат игры преобразуется в баллы на карту Магнит
+        <!-- Присоединяйтесь к большой гонке и собирайте более 300 печений! В случае успешной проверки чека, результат игры преобразуется в денежный сертификат Дикси! -->
+      </p>
+      <a href="" class="popup__btn-send btn">Играть в OREO-гонку</a>
     </div>
   </div>
 
