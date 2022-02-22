@@ -3,7 +3,7 @@
   flex-direction: column;
   position: relative;
   padding-top: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
   overflow: hidden;
 }
 
