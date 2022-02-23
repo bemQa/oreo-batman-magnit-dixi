@@ -10,14 +10,14 @@
 .content__text {
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-size: 28px;
   line-height: 1.2;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .content__text {
-    margin-bottom: 20px;
+    font-size: 24px;
   }
 }
 .content .products__list {
@@ -71,4 +71,77 @@
   color: #E6000E;;
   font-size: 16px;
   margin-top: auto;
+}
+.tabs {
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 60px;
+}
+@media screen and (max-width: 768px) {
+  .tabs {
+    margin: 0 auto 30px;
+  }
+}
+.tab {
+  position: relative;
+  width: 214px;
+  padding-left: 50px;
+  margin: 0 20px;
+  font-size: 21px;
+  line-height: 1;
+  color: #989898;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+@media screen and (max-width: 768px) {
+  .tab {
+    width: 150px;
+    padding-top: 45px;
+    padding-left: 0;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.tab.active {
+  color: #fff;
+  text-decoration: none;
+}
+.tab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  transition: all .2s linear;
+}
+@media screen and (max-width: 768px) {
+  .tab::before {
+    right: 0;
+    bottom: auto;
+  }
+}
+.tab.active::before {
+  opacity: 1;
+}
+.magnit-tab::before {
+  background: url(../img/prizes/magnit-icon.svg) center no-repeat;
+  background-size: contain;
+}
+.dixi-tab::before {
+  background: url(../img/prizes/dixi-icon.png) center no-repeat;
+  background-size: contain;
+}
+.tab-item {
+  display: none;
+}
+.tab-item.active {
+  display: block;
 }
