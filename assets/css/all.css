@@ -1428,6 +1428,11 @@ body {
   min-height: 100vh;
   color: #fff;
   font-family: "TT Limes Sans", sans-serif;
+  cursor: url(../img/cursor.png), auto;
+}
+
+body * {
+  cursor: url(../img/cursor.png), auto !important;
 }
 
 .page {
