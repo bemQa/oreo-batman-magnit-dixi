@@ -11,15 +11,19 @@ jQuery(document).ready(function(){
       $('html, body').animate( { scrollTop: destination }, 500, 'swing' );
       return false;
   });
+});
 
-  $('.js-reg-code').click(function(e) {
-    e.preventDefault();
-    OpenPopup('popup-animation-code');
-    $('.flip-container').addClass('active');
-    setTimeout(function () {
-      OpenPopup('popup-get-prize');
-    }, 4500);
-  });
+$(window).on('scroll load', function () {
+    if(window.innerWidth <= 768) {
+      var top = $(window).scrollTop();
+      if(top >= 100) {
+          $('header').removeClass('scroll');
+          $('header').addClass('scroll');
+      } else {
+          $('header').addClass('scroll');
+          $('header').removeClass('scroll');
+      }
+    }
 });
 
 // Popup

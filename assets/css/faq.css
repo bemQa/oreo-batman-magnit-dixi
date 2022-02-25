@@ -229,3 +229,8 @@
 .scrollbar-inner > .scroll-element .scroll-bar {
   background: #165186;
 }
+.select2-container--open .select2-dropdown--below {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}

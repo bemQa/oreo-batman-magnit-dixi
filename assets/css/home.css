@@ -202,8 +202,13 @@
   color: #E6000E;
 }
 
+.step .btn::after {
+  display: none;
+}
+
 .step .btn:hover {
   color: #fff;
+  background: #020204;
 }
 
 .steps-cards {

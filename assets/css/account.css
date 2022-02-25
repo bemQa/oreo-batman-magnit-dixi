@@ -1,7 +1,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .content {
@@ -554,8 +554,13 @@
   color: #E6000E;
 }
 
+.ret-info .btn::after {
+  display: none;
+}
+
 .ret-info .btn:hover {
   color: #fff;
+  background: #020204;
 }
 
 .ret-card {
